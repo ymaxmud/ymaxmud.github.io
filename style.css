@@ -436,8 +436,15 @@ article .icon {
   border: rgb(224, 228, 234) 0.1rem solid;
   border-radius: 8px;
   box-sizing: border-box;
+  display: block;
+  justify-content: flex-start;
   min-height: 150px;
   padding: 1rem;
+  text-align: left;
+  width: 100%;
+}
+
+.timeline-grid article div {
   width: 100%;
 }
 
