@@ -9,6 +9,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background: white;
+  color: black;
 }
 
 html {
@@ -90,7 +92,7 @@ a:hover {
   width: 100%;
   height: 2px;
   background-color: black;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-links {
@@ -101,7 +103,7 @@ a:hover {
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-links a {
@@ -111,10 +113,14 @@ a:hover {
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-links li {
+  list-style: none;
+}
+
+.menu-links ul {
   list-style: none;
 }
 
@@ -259,6 +265,17 @@ section {
   border: rgb(255, 255, 255) 0.1rem solid;
 }
 
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.btn:disabled:hover {
+  background: none;
+  border: rgb(163, 163, 163) 0.1rem solid;
+  color: black;
+}
+
 .btn-container {
   gap: 1rem;
 }
@@ -318,7 +335,8 @@ section {
 
 /* EXPERIENCE SECTION */
 
-#experience {
+#experience,
+#skills {
   position: relative;
 }
 
@@ -397,7 +415,7 @@ article .icon {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
+  background: rgb(250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
 }
@@ -432,5 +450,3 @@ footer {
 footer p {
   text-align: center;
 }
-
-
