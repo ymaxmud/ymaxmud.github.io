@@ -52,12 +52,17 @@
   .timeline-grid {
     grid-template-columns: 1fr;
   }
+  .skill-category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
+  #contact {
+    min-height: 40vh;
+  }
   footer {
-    height: 40vh;
+    height: auto;
   }
   #profile {
     height: 83vh;
@@ -114,5 +119,18 @@
   }
   .text-container {
     text-align: justify;
+  }
+  .profile-tags {
+    gap: 0.4rem;
+  }
+  .profile-tags span,
+  .skill-list span {
+    font-size: 0.78rem;
+  }
+  .skill-category-grid {
+    grid-template-columns: 1fr;
+  }
+  .skill-card {
+    padding: 1rem;
   }
 }
