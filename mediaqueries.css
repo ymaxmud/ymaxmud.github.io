@@ -42,8 +42,15 @@
     height: 275px;
     margin: 0 auto 2rem;
   }
+  #profile .section__pic-container {
+    width: 340px;
+    height: 340px;
+  }
   .about-containers {
     margin-top: 0;
+  }
+  .timeline-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -90,6 +97,14 @@
     width: auto;
     height: 46vw;
     justify-content: center;
+  }
+  #profile .section__pic-container {
+    width: 82vw;
+    height: 82vw;
+    max-height: 340px;
+    max-width: 340px;
+    min-height: 280px;
+    min-width: 280px;
   }
   .section__text__p2 {
     font-size: 1.25rem;
